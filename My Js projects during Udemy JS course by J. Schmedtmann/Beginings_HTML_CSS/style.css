@@ -1,0 +1,61 @@
+/* Star selector - with that we can selelct all the elements on the page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* it will include paddings and borders into the width or the height that we specify for an element */
+}
+
+/* for style elements we need first to select them, the very basic one element selector(we can simply select all elements of a certain type, for exemple the "body"*/
+body {
+  background-color: rgb(255, 230, 202);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 18px;
+  padding: 50px;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+.first {
+  color: red;
+}
+
+#smiling-name {
+  background-color: brown;
+  border: 4px solid #444;
+  /* the border is a shorthand property, because it allows us to specify multiple values here
+  - also this property is not inherited because if it would was all 3 childs inside should have border */
+  width: 626px;
+  padding: 25px;
+  margin-top: 30px;
+}
+
+input,
+button {
+  padding: 10px;
+  font-size: 16px;
+}
+
+a {
+  background-color: aqua;
+}
+
+#smiling {
+  width: 800px;
+}
+
+#smiling-name h2 {
+  color: rgb(247, 144, 110);
+}
