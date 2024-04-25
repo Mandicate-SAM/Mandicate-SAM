@@ -1,0 +1,257 @@
+<!doctype html>
+<html>
+<head>
+	<title>House sample</title>
+	<style >
+		#house {
+		background-color:#333366;
+		border:12px solid black;
+		}
+	</style>
+</head>
+<body>
+    <canvas id="house" width="800px" height="900px">
+	
+	</canvas>
+	<script>
+		var can=document.getElementById("house");
+		var ctx=can.getContext("2d");
+		//nor1
+		ctx.beginPath();
+		ctx.arc(90, 150, 50, 0, 2 * Math.PI, false); //centerX,centery,radius
+		ctx.fillStyle = "#a2a2a2";
+		ctx.fill();
+		
+		ctx.beginPath();
+		ctx.arc(140, 130, 50, 0, 2 * Math.PI, false); 
+		ctx.fillStyle = "#a2a2a2";
+		ctx.fill();
+		
+		ctx.beginPath();
+		ctx.arc(200, 130, 50, 0, 2 * Math.PI, false);
+		ctx.fillStyle = "a2a2a2";
+		ctx.fill();
+		
+		ctx.beginPath();
+		ctx.arc(190, 190, 50, 0, 2 * Math.PI, false);
+		ctx.fillStyle = "a2a2a2";
+		ctx.fill();
+		
+		ctx.beginPath();
+		ctx.arc(120, 190, 50, 0, 2 * Math.PI, false);
+		ctx.fillStyle = "#a2a2a2";
+		ctx.fill();
+		
+		//nor2
+		ctx.beginPath();
+		ctx.arc(450, 280, 90, 0, 2 * Math.PI, false);
+		ctx.fillStyle = "##a2a2a2";
+		ctx.fill();
+		
+		ctx.beginPath();
+		ctx.arc(470, 240, 70, 0, 2 * Math.PI, false);
+		ctx.fillStyle = "#a2a2a2";
+		ctx.fill();
+		
+		ctx.beginPath();
+		ctx.arc(540, 250, 70, 0, 2 * Math.PI, false);
+		ctx.fillStyle = "#a2a2a2";
+		ctx.fill();
+		
+		ctx.beginPath();
+		ctx.arc(530, 310, 70, 0, 2 * Math.PI, false);
+		ctx.fillStyle = "#a2a2a2";
+		ctx.fill();
+		
+		//luna
+				// Create gradient
+		var gradient = ctx.createLinearGradient(300, 300, 600, 500);
+		gradient.addColorStop(0, 'black');
+		gradient.addColorStop(1, '#FFFF99');
+		
+
+		ctx.beginPath();
+		ctx.fillStyle = gradient;
+		ctx.arc(680, 120, 70, 0, 2 * Math.PI);
+		ctx.fill();
+		//ctx.stroke();
+
+		
+		//ctx.beginPath();
+		//ctx.arc(570, 40, 80, 0, 2 * Math.PI, false);
+		//ctx.fillStyle = "#2323ff";
+		//ctx.fill();
+		
+		//fum
+		
+		ctx.beginPath();
+		ctx.arc(115, 340, 20, 0, 2 * Math.PI, false);
+		ctx.fillStyle = "#b6b6b6";
+		ctx.fill();
+		
+		ctx.beginPath();
+		ctx.arc(120, 320, 15, 0, 2 * Math.PI, false);
+		ctx.fillStyle = "#b6b6b6";
+		ctx.fill();
+		
+		ctx.beginPath();
+		ctx.arc(125, 300, 8, 0, 2 * Math.PI, false);
+		ctx.fillStyle = "#b6b6b6";
+		ctx.fill();
+		
+		
+		ctx.fillStyle="#669933"; //iarba 
+		ctx.fillRect(0,800,900,100);
+		
+		ctx.fillStyle="#333333"; // casa
+		ctx.fillRect(30,500,400,400); //x ax/ y ax/ width/ height
+		
+		ctx.fillStyle="#9999FF"; // geam 
+		ctx.fillRect(90,600,75,75);
+		
+		ctx.fillStyle="#9999FF"; // geam
+		ctx.fillRect(300,600,75,75);
+		
+		ctx.fillStyle="#5f4700"; // usa
+		ctx.fillRect(180,750,100,150);
+		
+		ctx.fillStyle="#5f4700"; //horn
+		ctx.fillRect(90,350,55,90);
+		
+		ctx.beginPath(); // acoperis 
+		ctx.moveTo(30,500);
+		ctx.lineTo(230,300);
+		ctx.lineTo(430,500);
+		ctx.fillStyle="#CC0000";
+		ctx.fill();
+		
+//brad 1
+		ctx.beginPath();
+		ctx.moveTo(440,780);
+		ctx.lineTo(500,720);
+		ctx.lineTo(560,780);
+		ctx.fillStyle="#1d8012";
+		ctx.fill();
+		
+		ctx.beginPath();
+		ctx.moveTo(455,750);
+		ctx.lineTo(500,710);
+		ctx.lineTo(545,750);
+		ctx.fillStyle="#229615";
+		ctx.fill();
+		
+		ctx.beginPath();
+		ctx.moveTo(475,720);
+		ctx.lineTo(500,690);
+		ctx.lineTo(525,720);
+		ctx.fillStyle="#3bb52d";
+		ctx.fill();
+		
+		ctx.fillStyle="#5e2206";
+		ctx.fillRect(495,780,10,20);
+		
+//brad 2
+		ctx.beginPath();
+		ctx.moveTo(580,780);
+		ctx.lineTo(635,720);
+		ctx.lineTo(700,780);
+		ctx.fillStyle="#1d8012";
+		ctx.fill();
+		
+		ctx.beginPath();
+		ctx.moveTo(595,750);
+		ctx.lineTo(635,710);
+		ctx.lineTo(680,750);
+		ctx.fillStyle="#229615";
+		ctx.fill();
+		
+		ctx.beginPath();
+		ctx.moveTo(610,720);
+		ctx.lineTo(635,690);
+		ctx.lineTo(660,720);
+		ctx.fillStyle="#3bb52d";
+		ctx.fill();
+		
+		ctx.fillStyle="#5e2206";
+		ctx.fillRect(635,780,10,20);
+
+//floare 1
+		ctx.beginPath();
+		ctx.arc(470, 840, 4, 0, 2 * Math.PI, false);
+		ctx.fillStyle = "yellow";
+		ctx.fill();
+		ctx.beginPath();
+		ctx.arc(465, 835, 5, 0, 2 * Math.PI, false);
+		ctx.fillStyle = "#e0a100";
+		ctx.fill();
+		ctx.beginPath();
+		ctx.arc(473, 833, 5, 0, 2 * Math.PI, false);
+		ctx.fillStyle = "#e0a100";
+		ctx.fill();
+		ctx.beginPath();
+		ctx.arc(477, 840, 5, 0, 2 * Math.PI, false);
+		ctx.fillStyle = "#e0a100";
+		ctx.fill();
+		ctx.beginPath();
+		ctx.arc(473, 846, 5, 0, 2 * Math.PI, false);
+		ctx.fillStyle = "#e0a100";
+		ctx.fill();
+		ctx.beginPath();
+		ctx.arc(465, 843, 5, 0, 2 * Math.PI, false);
+		ctx.fillStyle = "#e0a100";
+		ctx.fill();
+		
+//floare 2
+		ctx.beginPath();
+		ctx.arc(570, 840, 4, 0, 2 * Math.PI, false);
+		ctx.fillStyle = "yellow";
+		ctx.fill();
+		ctx.beginPath();
+		ctx.arc(565, 835, 5, 0, 2 * Math.PI, false);
+		ctx.fillStyle = "#e0a100";
+		ctx.fill();
+		ctx.beginPath();
+		ctx.arc(573, 833, 5, 0, 2 * Math.PI, false);
+		ctx.fillStyle = "#e0a100";
+		ctx.fill();
+		ctx.beginPath();
+		ctx.arc(577, 840, 5, 0, 2 * Math.PI, false);
+		ctx.fillStyle = "#e0a100";
+		ctx.fill();
+		ctx.beginPath();
+		ctx.arc(573, 846, 5, 0, 2 * Math.PI, false);
+		ctx.fillStyle = "#e0a100";
+		ctx.fill();
+		ctx.beginPath();
+		ctx.arc(565, 843, 5, 0, 2 * Math.PI, false);
+		ctx.fillStyle = "#e0a100";
+		ctx.fill();
+		
+//floare 3
+		ctx.beginPath();
+		ctx.arc(670, 840, 4, 0, 2 * Math.PI, false);
+		ctx.fillStyle = "yellow";
+		ctx.fill();
+		ctx.beginPath();
+		ctx.arc(665, 835, 5, 0, 2 * Math.PI, false);
+		ctx.fillStyle = "#e0a100";
+		ctx.fill();
+		ctx.beginPath();
+		ctx.arc(673, 833, 5, 0, 2 * Math.PI, false);
+		ctx.fillStyle = "#e0a100";
+		ctx.fill();
+		ctx.beginPath();
+		ctx.arc(677, 840, 5, 0, 2 * Math.PI, false);
+		ctx.fillStyle = "#e0a100";
+		ctx.fill();
+		ctx.beginPath();
+		ctx.arc(673, 846, 5, 0, 2 * Math.PI, false);
+		ctx.fillStyle = "#e0a100";
+		ctx.fill();
+		ctx.beginPath();
+		ctx.arc(665, 843, 5, 0, 2 * Math.PI, false);
+		ctx.fillStyle = "#e0a100";
+		ctx.fill();
+		</script>
+</body>
+</html>

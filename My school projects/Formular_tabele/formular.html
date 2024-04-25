@@ -1,0 +1,145 @@
+<html>
+
+<head>
+    <title>Formular</title>
+</head>
+
+<body style="background-color:rgba(255, 99, 71, 0.5);">
+    <table border="10px" align="center">
+        <caption align="top">
+            <h2>Activitati sportive cu mingea</h2>
+        </caption>
+        <tr bgcolor="white">
+            <td>Denumire</td>
+            <td>Badminton</td>
+            <td>Baschet</td>
+            <td>Baseball</td>
+            <td>Polo pe apa</td>
+            <td>Volei</td>
+            <td>Handbal</td>
+            <td>Tenis</td>
+            <td>Fotbal</td>
+            <td>Hochei pe iarba</td>
+        </tr>
+        <tr bgcolor="white">
+            <td>Poza</td>
+            <td><img src="images/badminton.jpg" width="120" height="120" /></td>
+            <td><img src="images/baschet.jpg" width="120" height="120" /></td>
+            <td><img src="images/baseball.jpg" width="120" height="120" /></td>
+            <td><img src="images/polo.jpg" width="120" height="120" /></td>
+            <td><img src="images/volei.jpg" width="120" height="120" /></td>
+            <td><img src="images/handbal.jpg" width="120" height="120" /></td>
+            <td><img src="images/tenis.jpg" width="120" height="120" /></td>
+            <td><img src="images/fotbal.jpg" width="120" height="120" /></td>
+            <td><img src="images/hochei.jpg" width="120" height="120" /></td>
+        </tr>
+    </table>
+
+    <form method="post">
+        <h2>Formular de inscriere</h2>
+        <table>
+            <tr>
+                <td>
+                    <label for="nume">Nume: </label>
+                </td>
+                <td>
+                    <input type="text" id="nume" required />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="prenume">Prenume: </label>
+                </td>
+                <td>
+                    <input type="text" id="prenume" required />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="data_nasterii">Data nasterii: </label>
+                </td>
+                <td>
+                    <input type="datetime-local" name="newinput" required />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">Email: </label>
+                </td>
+                <td>
+                    <input type="text" id="email" required>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="2">
+                    <label for="gen_">Gen: </label>
+                </td>
+                <td>
+                    <input type="radio" name="gen" value="barbat"> Barbat
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="gen" value="femeie"> Femeie
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="gen_">Denumire sport: </label>
+                </td>
+                <td>
+                    <input type="text" id="denumire" required>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="2">
+                    <label for="intrebare_">Ai mai practicat acest sport? </label>
+                </td>
+                <td>
+                    <input type="radio" name="intrebare" value="da"> Da
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="intrebare" value="nu"> Nu
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="timp_">Daca "DA" cat timp? </label>
+                </td>
+                <td>
+                    <input type="number" min="0" max="50" step="1" value="0" name="newinput" /> ani
+                    <input type="number" min="0" max="11" step="1" value="0" name="newinput" /> luni
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                </td>
+                <td>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                </td>
+                <td>
+
+                </td>
+                <td>
+
+                </td>
+                <td>
+                    <input type="submit" value="Trimite">
+                </td>
+                <td>
+                    <input type="reset" value="Reseteaza">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

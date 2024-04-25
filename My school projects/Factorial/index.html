@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Factorial</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="print.css" media="print" />
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <!-- #wrapper -->
+      <nav>
+        <!-- top nav -->
+        <div class="menu">
+          <ul>
+            <!--
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Products</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Support</a></li>
+				<li><a href="#">Contact Us</a></li>
+				-->
+          </ul>
+        </div>
+      </nav>
+      <!-- end of top nav -->
+
+      <header>
+        <!-- header -->
+        <img src="images/littlelogo2.png" alt="" class="littlelogo" />
+        <h1><a href="#">Ora de matematica</a></h1>
+        <h2><a>Simple exercitii de matematica</a></h2>
+        <img
+          src="images/headerimg2.jpg"
+          width="940"
+          height="200"
+          alt=""
+          class="mainimg"
+        /><!-- header image -->
+      </header>
+      <!-- end of header -->
+
+      <section id="main">
+        <!-- #main content and sidebar area -->
+        <section id="content">
+          <!-- #content -->
+          <article>
+            <h2><a href="#">Factorialul unui numar</a></h2>
+
+            <p>
+              In aceasta sectiune vom calcula factorialul unui numar introdus de
+              dumneavoastra.
+            </p>
+
+            <script>
+              function factorial() {
+                var num = document.getElementById("numar").value;
+                var fact = 1;
+                for (var i = 1; i <= num; i++) {
+                  fact = fact * i;
+                }
+                document.getElementById("rezultat").value = fact;
+              }
+            </script>
+
+            Introduceti un numar natural sau selectati din lista:
+            <input type="number" min="0" id="numar" />
+            <br />
+            <button onclick="factorial();">Calculeaza!</button>
+            <br />
+            <input type="text" id="rezultat" readonly />
+            <br />
+            <button onClick="window.location.reload();">Curata casetele</button>
+          </article>
+
+          <article>
+            <h2><a href="#">Operatie cu 3 numere naturale</a></h2>
+
+            <p>
+              Se vor da trei numere naturale a, b si c. Se va calcula suma
+              acestor numere.
+            </p>
+
+            <script>
+              function suma() {
+                var a = Number(document.getElementById("a").value);
+                var b = Number(document.getElementById("b").value);
+                var c = Number(document.getElementById("c").value);
+                var d = a + b + c;
+                document.getElementById("d").value = d;
+              }
+            </script>
+
+            Introduceti trei numere naturale sau selectati din lista:
+            <ul>
+              <li>
+                A:
+                <input type="number" id="a" />
+              </li>
+              <li>
+                B:
+                <input type="number" id="b" />
+              </li>
+              <li>
+                C:
+                <input type="number" id="c" />
+              </li>
+            </ul>
+            A + B + C
+            <button onclick="suma();">=</button>
+            <input type="text" id="d" readonly />
+            <br />
+            <button onClick="window.location.reload();">Curata casetele</button>
+          </article>
+        </section>
+        <!-- end of #content -->
+      </section>
+      <!-- end of #main content and sidebar-->
+
+      <footer>
+        <section id="footer-area">
+          <section id="footer-outer-block"></section>
+          <!-- end of footer-outer-block -->
+        </section>
+        <!-- end of footer-area -->
+      </footer>
+    </div>
+    <!-- #wrapper -->
+    <!-- Free template created by http://freehtml5templates.com -->
+  </body>
+</html>

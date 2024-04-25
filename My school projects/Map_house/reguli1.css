@@ -1,0 +1,37 @@
+h2 , h3, h4{
+    color:blue;
+	font-weight: bold; 
+	font-size: 12pt;
+	line-height: 24pt; 
+	font-family: helvetica; 
+    font-variant: normal;
+    font-style: normal;
+	background-image:url(t1.png);
+	background-repeat:no-repeat;
+	
+}
+p.clas1 {color:blue;
+         background-color:#cc1f1f;}
+
+.clas3{color:yellow;}
+#T {color:red;}
+h1#T {color:magenta;}
+.clas2{color:green;}
+
+.highlight {
+background-image: linear-gradient( to right, #2f54f8, #30eee4); 
+border-radius: 6px;
+padding: 3px 6px;
+}
+.row{
+	display: flex;
+}
+
+.column{
+	flex: 33.33%;
+	padding: 5px; 
+}
+#border{
+	border :5px solid rgb(13, 178, 255);
+}
+
